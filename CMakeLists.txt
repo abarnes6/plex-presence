@@ -28,9 +28,9 @@ if(WIN32)
   set(RES_FILES assets/resources.rc)
 endif()
 
-find_package(CURL CONFIG REQUIRED) 
+find_package(CURL REQUIRED) 
 find_package(nlohmann_json REQUIRED)
-find_package(yaml-cpp CONFIG REQUIRED)
+find_package(yaml-cpp REQUIRED)
 
 # print the link‑dependent libraries of CURL::libcurl
 get_target_property(_curl_deps CURL::libcurl
